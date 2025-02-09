@@ -4,11 +4,11 @@ import "./index.css";
 import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
-// import { setDefaultTranslations, setDefaultLanguage } from "react-multi-lang";
-// import ar from "./translation/arb.json";
-// import en from "./translation/en.json";
-// setDefaultTranslations({ ar, en });
-// setDefaultLanguage(localStorage.getItem("lang") || "en");
+import { setDefaultTranslations, setDefaultLanguage } from "react-multi-lang";
+import ar from "./translation/arb.json";
+import en from "./translation/en.json";
+setDefaultTranslations({ ar, en });
+setDefaultLanguage(localStorage.getItem("lang") || "en");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
