@@ -1,1 +1,10 @@
-{}
+{
+  "Login": {
+    "email": "بريد الكتروني",
+    "emailPlaceHolder": "ادخل بريدك الالكتروني",
+    "signIn": "تسجيل الدخول",
+    "password": "Password",
+    "LoginWithGoogle": "",
+    "HeaderTitle": "Welcome Back!"
+  }
+}
