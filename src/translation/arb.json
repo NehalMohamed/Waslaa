@@ -5,6 +5,9 @@
     "signIn": "تسجيل الدخول",
     "password": "Password",
     "LoginWithGoogle": "",
-    "HeaderTitle": "Welcome Back!"
+    "HeaderTitle": "Welcome Back!",
+    "Or": "or",
+    "DontHaveAccount": "Don't have an account?",
+    "CreateAccount": "Create an account"
   }
 }
