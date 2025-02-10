@@ -10,5 +10,13 @@
     "Or": "or",
     "DontHaveAccount": "Don't have an account?",
     "CreateAccount": "Create an account"
+  },
+  "Register": {
+    "HeaderTitle": "Stay in touch with your",
+    "Client": "clients",
+    "HeaderSubTitle": "Get the best offers on the first 90 days.",
+    "CreateAccount": "create account",
+    "username": "Username",
+    "HaveAccount": "Already have an account?"
   }
 }
