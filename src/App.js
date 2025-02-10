@@ -1,3 +1,4 @@
+import "./styles/shared.scss";
 import Login from "./components/login/login";
 function App() {
   return (
