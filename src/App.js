@@ -1,11 +1,18 @@
 import "./styles/shared.scss";
-import Login from "./components/login/login";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/signInUp/login/login";
+import Register from "./components/signInUp/register/register";
 import Home from "./components/home/home";
 function App() {
   return (
     <div className="App">
-      {/* <Login /> */}
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
