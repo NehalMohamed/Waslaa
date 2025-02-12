@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button, Dropdown, Row, Col } from 'react-bootstrap';
-import { FaCommentDots, FaBullhorn} from 'react-icons/fa';
+import { FaCommentDots, FaBullhorn,FaFacebookF, FaInstagram, FaTwitter, FaEnvelope,FaWhatsapp } from 'react-icons/fa';
 import { GoSearch } from 'react-icons/go';
 import { FiUser } from 'react-icons/fi';
 import { CiGlobe,CiMenuFries } from 'react-icons/ci';
@@ -153,29 +153,32 @@ const Home = () => {
           </Row>
         </Container>
 
-
-       {/* New Section
-       <Container fluid className="new-section py-5">
-        <Row>
-          <Col md={6} className="text-section">
-            <h2>Waslaa aims to make your brand successful</h2>
-            <p>through the access of your customers to your brand with ease.</p>
-            <Button className="cta-button">Get started</Button>
-          </Col>
-          <Col md={6} className="image-section text-center">
-            <img src="/section-image.png" alt="Section Illustration" className="section-illustration" />
-          </Col>
-        </Row>
-      </Container> */}
-
+        <Container>
+        <div className="hero-container" style={{ backgroundImage: "url(/images/wasla-bg.png)" }}>
+          <div className="hero-content">
+            <h2>
+              Waslaa aims to make <br/>your brand successful <br />
+              through the access of<br/> your customers to <br />
+              your brand with ease.
+            </h2>
+          </div>
+          <button className="hero-button">Get started</button>
+        </div>
+        </Container>
       {/* Footer */}
       <footer className="footer py-4">
-        <Container>
-        <hr />
-          <Row>
+        <Container className="p-0">
+        <hr className="custom-hr"/>
+          <Row className="footer-content">
             <Col md={4} className="footer-logo">
               <img src="/logo/wasla logo.png" alt="Logo" className="footer-logo-img" />
-              <p className="small-text">Waslaa aims to make your brand successful through the access of your customers to your brand with ease.</p>
+              <p className="small-text footer-description">Waslaa aims to make your brand successful <br/>through the access of your customers to <br/>your brand with ease.</p>
+              <div className="social-icons">
+                  <div className="icon"><FaFacebookF/></div>
+                  <div className="icon"><FaInstagram/></div>
+                  <div className="icon"><FaTwitter/></div>
+                  <div className="icon"><FaEnvelope/></div>
+               </div>
             </Col>
             <Col md={4} className="footer-links">
               <h5>Company</h5>
@@ -192,16 +195,23 @@ const Home = () => {
               <ul>
                 <li className="small-text">Help Center</li>
                 <li className="small-text">Chat with us</li>
+                <li> <br/></li>
+                 
               </ul>
               <h5>Our New</h5>
-              <p className="small-text">#Link_it_with_waslaa</p>
+              <p className="small-text link-us">#Link_it_with_waslaa</p>
             </Col>
           </Row>
-          <hr />
-          <p className="text-left small-text">Copyright © Waslaa Inc. 2024-2025 - All Rights Reserved</p>
+          <hr className="custom-hr"/>
+          <p className="text-left small-text copy-righ">Copyright © Waslaa Inc. 2024-2025 - All Rights Reserved</p>
         </Container>
       </footer>
 
+
+      {/* WhatsApp Floating Button */}
+      <a href="https://wa.me/01067551474" className="whatsapp-button" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp className="whatsapp-icon" />
+      </a>
       </Container>
     </Container>
   );
