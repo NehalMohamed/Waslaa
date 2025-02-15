@@ -67,7 +67,7 @@ const Home = () => {
 
         <div className="contact-designers">
           <Row className="service-item align-items-left">
-            <Col md={6} className="design-text">
+            <Col md={5} className="design-text">
               <h3 className="design-title">Design your website</h3>
               <p className="design-description">
                 Make your brand more <br />
@@ -75,7 +75,7 @@ const Home = () => {
                 to your products.
               </p>
             </Col>
-            <Col md={6} className="text-left">
+            <Col md={7} className="text-left">
               <img
                 src="images/web-design.png"
                 alt="Website Design"
@@ -84,14 +84,14 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="service-item-designers align-items-left">
-            <Col md={6}>
+            <Col md={7}>
               <h3 className="design-title">Contact our creative designers</h3>
               <p className="design-description">
                 Creative team for designing your <br />
                 business identity.
               </p>
             </Col>
-            <Col md={6} className="text-left">
+            <Col md={5} className="text-left">
               <img
                 src="images/design-award2.png"
                 alt="Website Design"

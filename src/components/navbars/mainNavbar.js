@@ -4,6 +4,8 @@ import {FaCommentDots,FaBullhorn} from "react-icons/fa";
 import { GoSearch } from "react-icons/go";
 import { FiUser } from "react-icons/fi";
 import { CiGlobe, CiMenuFries } from "react-icons/ci";
+import LanguageDropdown from '../Dropdowns/LanguageDropdown';
+import MenuDropdown from '../Dropdowns/MenuDropdown';
 import "./mainNavbar.scss";
 const MainNavbar = () => {
     return (  
@@ -25,8 +27,9 @@ const MainNavbar = () => {
         <div className="ms-auto d-flex gap-3 align-items-center nav-icons">
           <GoSearch className="icon" />
           <FiUser className="icon" />
-          <CiGlobe className="icon" />
-          <Dropdown>
+          <LanguageDropdown /> 
+          <MenuDropdown />
+          {/* <Dropdown>
             <Dropdown.Toggle
               variant="light"
               id="dropdown-basic"
@@ -60,7 +63,7 @@ const MainNavbar = () => {
                 </Col>
               </Row>
             </Dropdown.Menu>
-          </Dropdown>
+          </Dropdown> */}
         </div>
       </Navbar>
        );
