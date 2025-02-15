@@ -9,12 +9,14 @@ import MainNavbar from '../navbars/mainNavbar';
 import SaleNavbar from '../navbars/saleNavbar';
 import MainFooter from '../footer/mainFooter';
 import Chat from '../chatIcon/chat';
+import OfferPopup from '../OfferPopup/OfferPopup';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.scss";
 
 const Home = () => {
   return (
     <>
+      <OfferPopup />
       <MainNavbar />
       
       <SaleNavbar />
